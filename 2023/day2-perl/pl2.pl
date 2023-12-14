@@ -23,6 +23,8 @@ while (my $line = <>) {
       }
     }
   }
+  say Dumper values %{$min};
+  say Dumper product(values %{$min});
   $sum += product(values %{$min});
 }
 say Dumper $sum;
